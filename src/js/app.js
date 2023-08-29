@@ -1,4 +1,6 @@
-import DOMManipulation from './dommanipulation';
+import Element from "./initElement"
 
-const dom = new DOMManipulation(document.querySelector('body'));
-dom.bindToDOM();
+document.querySelectorAll(".btn").forEach((el) => {
+  const element = new Element(el);
+  element.init();
+});
