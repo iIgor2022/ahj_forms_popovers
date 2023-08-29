@@ -32,6 +32,7 @@ export default class Popover {
     this.html.style.left = `${left + width / 2 - this.html.offsetWidth / 2}px`
   }
 
+  // eslint-disable-next-line class-methods-use-this
   removePopover() {
     const currentPopover = document.querySelector(".popover");
     if (currentPopover) {
